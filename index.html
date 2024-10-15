@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,6 +31,44 @@
         <h2>About us</h2>
         <p>Somos el grupo wms</p>
         </section>
+
+    <title>Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" onclick="navigate('Home')">Home</a>
+    <a href="#" onclick="navigate('About')">About</a>
+    <a href="#" onclick="navigate('Services')">Services</a>
+    <a href="#" onclick="navigate('Contact')">Contact</a>
+</nav>
+
+<script>
+    function navigate(page) {
+        alert('You clicked on: ' + page);
+        // Here you can add functionality to navigate to different pages if needed
+        // e.g., window.location.href = page + '.html';
+    }
+</script>
+
 
 </body>
 </html>
